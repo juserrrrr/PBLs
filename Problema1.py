@@ -118,24 +118,27 @@ if temp_max == 0:
 else:
     temp_max = f"{temp:.2f}°C"
 print (
-    f"=====================[ATLETAS CADASTRADOS = ({atleta_soma})]=====================\n"
-    f"ATLETAS QUE SENTIRAM SINTOMAS      /      TEMPERATURA MAXIMA ENTRE OS ATLETAS     \n"
-    f"         [{sintomas_soma}] / [{((sintomas_soma / atleta_soma)*100 ):.2f}%]                               [{temp_max}]                        \n"
-    f"IDADE MEDIA DOS ATLETAS            /      IDADE DO ATLETA MAIS NOVO COM SINTOMA\n"
-    f"         [{(idade_soma / atleta_soma):.2f}]                                       [{idade_novo}]\n"
-    f"IDADE MEDIA COM SINTOMAS            /     IDADE DO ATLETA MAIS VELHO COM SINTOMA\n"
-    f"         [{resul_sint:.2f}]                                       [{idade_velho}]\n"
-    f"IDADE MEDIA SEM SINTOMAS\n"
-    f"         [{resul_Ssint:.2f}]\n"
-    f'======================[ATLETAS QUE TOMARAM KIT COVID]==========================\n'
-    f'                      -MULHERES-      -HOMENS-\n'
-    f'                          [{kitcovid_somaF}]            [{kitcovid_somaM}]\n'
-    f'                           -              -         \n'
-    f'                          [{kitcovid_soma_sintomaF}]            [{kitcovid_soma_sintomaM}] // COM SINTOMAS\n'
-    f'                          [{kitcovid_soma_SemsintomaF}]            [{kitcovid_soma_SemsintomaM}] // SEM SINTOMAS\n'
-    f'==============================[MEDALHAS]==============================\n'
-    f'       -MULHERES-      -HOMENS-   /   -COM SINTOMAS      -SEM SINTOMA-\n'
-    f'OURO   => [{ouro_somaF}]            [{ouro_somaM}]               [{ouro_somaS}]                [{(ouro_somaF + ouro_somaM)- ouro_somaS}]\n'
-    f'PRATA  => [{prata_somaF}]            [{prata_somaM}]               [{prata_somaS}]                [{(prata_somaF + prata_somaM)- prata_somaS}]\n'
-    f'BRONZE => [{bronze_somaF}]            [{prata_somaM}]               [{bronze_somaS}]                [{(bronze_somaF + bronze_somaM)- bronze_somaS}]\n'
+    f"==[ATLETAS CADASTRADOS = ({atleta_soma})]==\n"
+    f"ATLETAS QUE SENTIRAM SINTOMAS [{sintomas_soma}] [{((sintomas_soma / atleta_soma)*100 ):.2f}%]\n"
+    f"TEMPERATURA MAXIMA ENTRE OS ATLETAS [{temp_max}]\n"
+    f"IDADE MEDIA DOS ATLETAS  [{(idade_soma / atleta_soma):.2f}]\n"
+    f"IDADE MEDIA DOS ATLETAS COM SINTOMAS [{resul_sint:.2f}]\n"
+    f"IDADE MEDIA DOS ATLETAS SEM SINTOMAS [{resul_Ssint:.2f}]\n"
+    f"IDADE DO ATLETA MAIS NOVO COM SINTOMA [{idade_novo}]\n"
+    f"IDADE DO ATLETA MAIS VELHO COM SINTOMA [{idade_velho}]\n"
+    f'=======[ATLETAS QUE TOMARAM KIT COVID]=======\n'
+    f'-MULHERES-      -HOMENS-\n'
+    f'[{kitcovid_somaF}]            [{kitcovid_somaM}]\n'
+    f' -              -         \n'
+    f'[{kitcovid_soma_sintomaF}]            [{kitcovid_soma_sintomaM}] // COM SINTOMAS\n'
+    f'[{kitcovid_soma_SemsintomaF}]            [{kitcovid_soma_SemsintomaM}] // SEM SINTOMAS\n'
+    f'============[MEDALHAS]===========\n'
+    f'       -MULHERES-      -HOMENS--\n'
+    f'OURO   => [{ouro_somaF}]            [{ouro_somaM}]\n'
+    f'PRATA  => [{prata_somaF}]            [{prata_somaM}]\n'
+    f'BRONZE => [{bronze_somaF}]            [{prata_somaM}]\n'
+    f'       -COM SINTOMAS  -SEM SINTOMA-\n'
+    f'OURO   => [{ouro_somaS}]            [{(ouro_somaF + ouro_somaM)- ouro_somaS}]\n'
+    f'PRATA  => [{prata_somaS}]            [{(prata_somaF + prata_somaM)- prata_somaS}]\n'
+    f'BRONZE => [{bronze_somaS}]            [{(bronze_somaF + bronze_somaM)- bronze_somaS}]\n'
 )
