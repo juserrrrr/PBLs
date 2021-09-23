@@ -131,3 +131,4 @@ print (
     f'PRATA  => [{prata_soma_sintoma}]            [{(prata_soma_femi + prata_soma_masc)- prata_soma_sintoma}]\n'
     f'BRONZE => [{bronze_soma_sintoma}]            [{( bronze_soma_femi + bronze_soma_masc)- bronze_soma_sintoma}]\n'
 )
+#teste
