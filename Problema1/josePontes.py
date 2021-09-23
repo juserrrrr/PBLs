@@ -1,5 +1,5 @@
 '''
-Autor: José Gabriel de Almeida Pontes
+Autor: José Gabriel
 Componente Curricular: EXA-854 MI-Algoritmos
 Concluido em: 30/08/2021
 Declaro que este código foi elaborado por mim de forma individual e não contém nenhum
